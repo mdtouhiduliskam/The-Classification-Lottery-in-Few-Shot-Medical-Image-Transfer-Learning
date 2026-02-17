@@ -195,3 +195,66 @@ def cutmix_data(x, y, alpha=1.0):
 def mixup_criterion(criterion, pred, y_a, y_b, lam):
     """MixUp/CutMix loss"""
     return lam * criterion(pred, y_a) + (1 - lam) * criterion(pred, y_b)
+
+
+# ============ DATA TRANSFORMS ============
+
+def get_transforms(train=True, img_size=224, augmentation='standard'):
+    """
+    Data transforms with augmentation strategy
+    augmentation: 'standard', 'mixup', 'cutmix'
+    Note: MixUp/CutMix are applied during training, not in transform
+    """
+    
+    if train:
+        if augmentation in ['standard', 'mixup', 'cutmix']:
+            # Same base transforms for all
+            return transforms.Compose([
+                transforms.Resize((img_size, img_size)),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.RandomRotation(15),
+                transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.1),
+                transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),
+                transforms.ToTensor(),
+                transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+            ])
+    else:
+        return transforms.Compose([
+            transforms.Resize((img_size, img_size)),
+            transforms.ToTensor(),
+            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+        ])
+        
+        
+def mixup_criterion(criterion, pred, y_a, y_b, lam):
+    """MixUp/CutMix loss"""
+    return lam * criterion(pred, y_a) + (1 - lam) * criterion(pred, y_b)
+
+
+# ============ DATA TRANSFORMS ============
+
+def get_transforms(train=True, img_size=224, augmentation='standard'):
+    """
+    Data transforms with augmentation strategy
+    augmentation: 'standard', 'mixup', 'cutmix'
+    Note: MixUp/CutMix are applied during training, not in transform
+    """
+    
+    if train:
+        if augmentation in ['standard', 'mixup', 'cutmix']:
+            # Same base transforms for all
+            return transforms.Compose([
+                transforms.Resize((img_size, img_size)),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.RandomRotation(15),
+                transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.1),
+                transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),
+                transforms.ToTensor(),
+                transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+            ])
+    else:
+        return transforms.Compose([
+            transforms.Resize((img_size, img_size)),
+            transforms.ToTensor(),
+            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+        ])
