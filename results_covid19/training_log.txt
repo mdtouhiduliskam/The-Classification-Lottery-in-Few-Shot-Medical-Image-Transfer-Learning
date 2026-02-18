@@ -1,0 +1,1935 @@
+🚀 FULL EXPERIMENT MODE
+======================================================================
+IEEE ACCESS EXPERIMENTS - COMPLETE PIPELINE
+======================================================================
+Device: cuda
+Test Mode: False
+Datasets: 1
+Models: 3
+Fine-tuning strategies: 2
+Augmentation strategies: 1
+Sample sizes: [5, 10, 20, 50, 100, 200]
+Independent runs: 2
+Batch size: 32
+Max epochs: 50
+======================================================================
+
+######################################################################
+# STARTING COMPLETE EXPERIMENTS
+######################################################################
+
+Total experiments to run: 72
+Estimated time: ~720 minutes
+
+
+######################################################################
+# DATASET: COVID-19 RADIOGRAPHY
+# Classes: 4 | Total samples: 21165
+######################################################################
+
+
+[1/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
+100%|██████████| 97.8M/97.8M [00:00<00:00, 224MB/s]
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3848, Val Loss=1.4572, Val Acc=0.1203
+Epoch 10: Train Loss=1.3358, Val Loss=1.4285, Val Acc=0.1534
+Epoch 15: Train Loss=1.2887, Val Loss=1.4275, Val Acc=0.2117
+Epoch 20: Train Loss=1.2876, Val Loss=1.4207, Val Acc=0.2400
+Epoch 25: Train Loss=1.2475, Val Loss=1.4105, Val Acc=0.2564
+Epoch 30: Train Loss=1.2103, Val Loss=1.3904, Val Acc=0.2762
+Epoch 35: Train Loss=1.1930, Val Loss=1.3779, Val Acc=0.2920
+Epoch 40: Train Loss=1.1275, Val Loss=1.3699, Val Acc=0.2967
+Epoch 45: Train Loss=1.0852, Val Loss=1.3704, Val Acc=0.2957
+Epoch 50: Train Loss=1.0591, Val Loss=1.3779, Val Acc=0.2709
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.3065
+F1 (weighted): 0.2740
+F1 (macro): 0.2459
+AUC-ROC: 0.6688
+
+[2/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3657, Val Loss=1.4851, Val Acc=0.1008
+Epoch 10: Train Loss=1.3290, Val Loss=1.4768, Val Acc=0.1074
+Early stopping at epoch 11
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.1972
+F1 (weighted): 0.2201
+F1 (macro): 0.1454
+AUC-ROC: 0.3826
+
+[3/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.9321, Val Loss=1.2605, Val Acc=0.4813
+Epoch 10: Train Loss=0.3853, Val Loss=1.1265, Val Acc=0.5770
+Epoch 15: Train Loss=0.1098, Val Loss=1.1227, Val Acc=0.5946
+Epoch 20: Train Loss=0.0242, Val Loss=1.1612, Val Acc=0.5783
+Early stopping at epoch 22
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5946
+F1 (weighted): 0.5577
+F1 (macro): 0.5023
+AUC-ROC: 0.7982
+
+[4/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.9152, Val Loss=1.3095, Val Acc=0.3975
+Epoch 10: Train Loss=0.2821, Val Loss=1.1492, Val Acc=0.5449
+Epoch 15: Train Loss=0.1041, Val Loss=1.1333, Val Acc=0.5833
+Epoch 20: Train Loss=0.0226, Val Loss=1.1702, Val Acc=0.5742
+Early stopping at epoch 23
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5798
+F1 (weighted): 0.5488
+F1 (macro): 0.5292
+AUC-ROC: 0.7837
+
+[5/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3606, Val Loss=1.3843, Val Acc=0.2353
+Epoch 10: Train Loss=1.3328, Val Loss=1.3671, Val Acc=0.2809
+Epoch 15: Train Loss=1.3193, Val Loss=1.3592, Val Acc=0.3150
+Epoch 20: Train Loss=1.2561, Val Loss=1.3735, Val Acc=0.2983
+Early stopping at epoch 24
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.3276
+F1 (weighted): 0.3051
+F1 (macro): 0.2405
+AUC-ROC: 0.5840
+
+[6/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3958, Val Loss=1.4848, Val Acc=0.0778
+Epoch 10: Train Loss=1.3696, Val Loss=1.3611, Val Acc=0.3735
+Epoch 15: Train Loss=1.3535, Val Loss=1.2976, Val Acc=0.4406
+Epoch 20: Train Loss=1.3250, Val Loss=1.3278, Val Acc=0.3783
+Epoch 25: Train Loss=1.3041, Val Loss=1.3367, Val Acc=0.3849
+Early stopping at epoch 26
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.4224
+F1 (weighted): 0.3996
+F1 (macro): 0.3049
+AUC-ROC: 0.5708
+
+[7/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.7462, Val Loss=1.0435, Val Acc=0.6145
+Epoch 10: Train Loss=0.2360, Val Loss=0.9138, Val Acc=0.6154
+Epoch 15: Train Loss=0.0840, Val Loss=1.0784, Val Acc=0.5657
+Early stopping at epoch 20
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6145
+F1 (weighted): 0.5813
+F1 (macro): 0.5624
+AUC-ROC: 0.8629
+
+[8/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.8376, Val Loss=0.9596, Val Acc=0.5732
+Epoch 10: Train Loss=0.3258, Val Loss=0.7769, Val Acc=0.7146
+Epoch 15: Train Loss=0.0743, Val Loss=1.0694, Val Acc=0.5392
+Early stopping at epoch 20
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7080
+F1 (weighted): 0.6761
+F1 (macro): 0.6323
+AUC-ROC: 0.8724
+
+[9/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3399, Val Loss=1.3946, Val Acc=0.2142
+Epoch 10: Train Loss=1.2557, Val Loss=1.3566, Val Acc=0.3030
+Epoch 15: Train Loss=1.2267, Val Loss=1.2846, Val Acc=0.5121
+Epoch 20: Train Loss=1.1888, Val Loss=1.2582, Val Acc=0.5172
+Epoch 25: Train Loss=1.1231, Val Loss=1.2136, Val Acc=0.5691
+Epoch 30: Train Loss=1.0702, Val Loss=1.1813, Val Acc=0.5710
+Epoch 35: Train Loss=1.0687, Val Loss=1.1434, Val Acc=0.6198
+Epoch 40: Train Loss=1.0083, Val Loss=1.1054, Val Acc=0.6419
+Epoch 45: Train Loss=1.0121, Val Loss=1.0972, Val Acc=0.6356
+Epoch 50: Train Loss=0.9770, Val Loss=1.0918, Val Acc=0.6296
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6504
+F1 (weighted): 0.6060
+F1 (macro): 0.5353
+AUC-ROC: 0.8166
+
+[10/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3344, Val Loss=1.4075, Val Acc=0.2520
+Epoch 10: Train Loss=1.3017, Val Loss=1.3204, Val Acc=0.4454
+Epoch 15: Train Loss=1.2201, Val Loss=1.2255, Val Acc=0.5559
+Epoch 20: Train Loss=1.1723, Val Loss=1.2196, Val Acc=0.5858
+Epoch 25: Train Loss=1.1690, Val Loss=1.1615, Val Acc=0.6173
+Epoch 30: Train Loss=1.1121, Val Loss=1.1416, Val Acc=0.6170
+Epoch 35: Train Loss=1.0646, Val Loss=1.1137, Val Acc=0.6296
+Epoch 40: Train Loss=1.0414, Val Loss=1.0908, Val Acc=0.6378
+Epoch 45: Train Loss=1.0178, Val Loss=1.0740, Val Acc=0.6309
+Epoch 50: Train Loss=0.9529, Val Loss=1.0565, Val Acc=0.6394
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6450
+F1 (weighted): 0.6074
+F1 (macro): 0.5506
+AUC-ROC: 0.8282
+
+[11/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.4182, Val Loss=0.8801, Val Acc=0.6885
+Epoch 10: Train Loss=0.1380, Val Loss=0.8192, Val Acc=0.6611
+Epoch 15: Train Loss=0.0529, Val Loss=0.9207, Val Acc=0.6542
+Early stopping at epoch 17
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7247
+F1 (weighted): 0.7029
+F1 (macro): 0.6610
+AUC-ROC: 0.8953
+
+[12/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.4572, Val Loss=0.7754, Val Acc=0.7209
+Epoch 10: Train Loss=0.2152, Val Loss=0.7626, Val Acc=0.7068
+Epoch 15: Train Loss=0.0287, Val Loss=0.6857, Val Acc=0.7521
+Epoch 20: Train Loss=0.0163, Val Loss=0.7893, Val Acc=0.7345
+Early stopping at epoch 23
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7537
+F1 (weighted): 0.7538
+F1 (macro): 0.7423
+AUC-ROC: 0.9179
+
+[13/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.2926, Val Loss=1.3252, Val Acc=0.4346
+Epoch 10: Train Loss=1.1801, Val Loss=1.2276, Val Acc=0.5619
+Epoch 15: Train Loss=1.1098, Val Loss=1.1627, Val Acc=0.6072
+Epoch 20: Train Loss=1.0484, Val Loss=1.1340, Val Acc=0.6135
+Epoch 25: Train Loss=0.9864, Val Loss=1.0443, Val Acc=0.6428
+Epoch 30: Train Loss=0.9447, Val Loss=1.0725, Val Acc=0.6120
+Epoch 35: Train Loss=0.9257, Val Loss=1.0131, Val Acc=0.6224
+Epoch 40: Train Loss=0.8349, Val Loss=0.9942, Val Acc=0.6378
+Epoch 45: Train Loss=0.8371, Val Loss=1.0000, Val Acc=0.6283
+Epoch 50: Train Loss=0.7891, Val Loss=0.9770, Val Acc=0.6176
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6491
+F1 (weighted): 0.6068
+F1 (macro): 0.5366
+AUC-ROC: 0.8601
+
+[14/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.3140, Val Loss=1.2957, Val Acc=0.4683
+Epoch 10: Train Loss=1.2159, Val Loss=1.2003, Val Acc=0.5912
+Epoch 15: Train Loss=1.1268, Val Loss=1.1550, Val Acc=0.6283
+Epoch 20: Train Loss=1.0641, Val Loss=1.1119, Val Acc=0.6312
+Epoch 25: Train Loss=1.0154, Val Loss=1.0502, Val Acc=0.6507
+Epoch 30: Train Loss=0.9630, Val Loss=1.0191, Val Acc=0.6494
+Epoch 35: Train Loss=0.9163, Val Loss=1.0011, Val Acc=0.6479
+Epoch 40: Train Loss=0.8600, Val Loss=1.0028, Val Acc=0.6157
+Epoch 45: Train Loss=0.8502, Val Loss=0.9155, Val Acc=0.6712
+Epoch 50: Train Loss=0.8455, Val Loss=0.9622, Val Acc=0.6435
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6674
+F1 (weighted): 0.6395
+F1 (macro): 0.5860
+AUC-ROC: 0.8662
+
+[15/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2018, Val Loss=0.5392, Val Acc=0.7909
+Epoch 10: Train Loss=0.1187, Val Loss=0.6621, Val Acc=0.7792
+Early stopping at epoch 15
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7843
+F1 (weighted): 0.7842
+F1 (macro): 0.7805
+AUC-ROC: 0.9404
+
+[16/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2718, Val Loss=0.5253, Val Acc=0.8035
+Epoch 10: Train Loss=0.1641, Val Loss=0.5749, Val Acc=0.8126
+Early stopping at epoch 15
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7969
+F1 (weighted): 0.7976
+F1 (macro): 0.7986
+AUC-ROC: 0.9334
+
+[17/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.2396, Val Loss=1.2663, Val Acc=0.4920
+Epoch 10: Train Loss=1.1027, Val Loss=1.1110, Val Acc=0.6236
+Epoch 15: Train Loss=1.0040, Val Loss=1.0299, Val Acc=0.6520
+Epoch 20: Train Loss=0.9169, Val Loss=1.0341, Val Acc=0.6318
+Epoch 25: Train Loss=0.8893, Val Loss=0.9459, Val Acc=0.6649
+Epoch 30: Train Loss=0.8358, Val Loss=0.9041, Val Acc=0.6661
+Epoch 35: Train Loss=0.8238, Val Loss=0.8480, Val Acc=0.6932
+Epoch 40: Train Loss=0.7465, Val Loss=0.8249, Val Acc=0.6816
+Epoch 45: Train Loss=0.7440, Val Loss=0.8151, Val Acc=0.6866
+Epoch 50: Train Loss=0.7088, Val Loss=0.8130, Val Acc=0.6844
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6904
+F1 (weighted): 0.6583
+F1 (macro): 0.5992
+AUC-ROC: 0.8783
+
+[18/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.2303, Val Loss=1.2121, Val Acc=0.5965
+Epoch 10: Train Loss=1.0847, Val Loss=1.0817, Val Acc=0.6397
+Epoch 15: Train Loss=0.9849, Val Loss=0.9870, Val Acc=0.6532
+Epoch 20: Train Loss=0.9200, Val Loss=0.9412, Val Acc=0.6693
+Epoch 25: Train Loss=0.8558, Val Loss=0.8972, Val Acc=0.6655
+Epoch 30: Train Loss=0.8302, Val Loss=0.8698, Val Acc=0.6712
+Epoch 35: Train Loss=0.8007, Val Loss=0.8628, Val Acc=0.6611
+Epoch 40: Train Loss=0.7864, Val Loss=0.8150, Val Acc=0.6816
+Epoch 45: Train Loss=0.7325, Val Loss=0.7938, Val Acc=0.7024
+Epoch 50: Train Loss=0.7357, Val Loss=0.8444, Val Acc=0.6715
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7005
+F1 (weighted): 0.6778
+F1 (macro): 0.6277
+AUC-ROC: 0.8811
+
+[19/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2040, Val Loss=0.4102, Val Acc=0.8466
+Epoch 10: Train Loss=0.1024, Val Loss=0.4796, Val Acc=0.8479
+Epoch 15: Train Loss=0.0372, Val Loss=0.4088, Val Acc=0.8627
+Epoch 20: Train Loss=0.0312, Val Loss=0.3748, Val Acc=0.8854
+Epoch 25: Train Loss=0.0509, Val Loss=0.4316, Val Acc=0.8847
+Early stopping at epoch 30
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8800
+F1 (weighted): 0.8798
+F1 (macro): 0.8845
+AUC-ROC: 0.9692
+
+[20/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2006, Val Loss=0.3959, Val Acc=0.8589
+Epoch 10: Train Loss=0.0906, Val Loss=0.4581, Val Acc=0.8529
+Epoch 15: Train Loss=0.0589, Val Loss=0.3809, Val Acc=0.8765
+Epoch 20: Train Loss=0.0389, Val Loss=0.3856, Val Acc=0.8746
+Early stopping at epoch 25
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8765
+F1 (weighted): 0.8760
+F1 (macro): 0.8786
+AUC-ROC: 0.9663
+
+[21/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.1151, Val Loss=1.1431, Val Acc=0.6176
+Epoch 10: Train Loss=0.9531, Val Loss=0.9694, Val Acc=0.6504
+Epoch 15: Train Loss=0.8833, Val Loss=0.8953, Val Acc=0.6702
+Epoch 20: Train Loss=0.8068, Val Loss=0.8455, Val Acc=0.6800
+Epoch 25: Train Loss=0.7573, Val Loss=0.7889, Val Acc=0.6935
+Epoch 30: Train Loss=0.7393, Val Loss=0.7686, Val Acc=0.7036
+Epoch 35: Train Loss=0.7098, Val Loss=0.7498, Val Acc=0.7146
+Epoch 40: Train Loss=0.6946, Val Loss=0.7371, Val Acc=0.7146
+Epoch 45: Train Loss=0.6798, Val Loss=0.7285, Val Acc=0.7055
+Epoch 50: Train Loss=0.6442, Val Loss=0.7174, Val Acc=0.7121
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7241
+F1 (weighted): 0.7104
+F1 (macro): 0.6728
+AUC-ROC: 0.8962
+
+[22/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: resnet50 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 8,196 (0.0%)
+Epoch 5: Train Loss=1.1473, Val Loss=1.1147, Val Acc=0.6296
+Epoch 10: Train Loss=0.9776, Val Loss=0.9586, Val Acc=0.6743
+Epoch 15: Train Loss=0.8802, Val Loss=0.8689, Val Acc=0.6772
+Epoch 20: Train Loss=0.8101, Val Loss=0.8177, Val Acc=0.6850
+Epoch 25: Train Loss=0.7979, Val Loss=0.7939, Val Acc=0.6992
+Epoch 30: Train Loss=0.7602, Val Loss=0.7751, Val Acc=0.6901
+Epoch 35: Train Loss=0.7353, Val Loss=0.7443, Val Acc=0.7039
+Epoch 40: Train Loss=0.6933, Val Loss=0.7242, Val Acc=0.7134
+Epoch 45: Train Loss=0.6805, Val Loss=0.6994, Val Acc=0.7250
+Epoch 50: Train Loss=0.6584, Val Loss=0.7239, Val Acc=0.7068
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7301
+F1 (weighted): 0.7178
+F1 (macro): 0.6834
+AUC-ROC: 0.8982
+
+[23/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2141, Val Loss=0.3734, Val Acc=0.8800
+Epoch 10: Train Loss=0.0920, Val Loss=0.3761, Val Acc=0.8907
+Epoch 15: Train Loss=0.0590, Val Loss=0.3893, Val Acc=0.8879
+Early stopping at epoch 19
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8655
+F1 (weighted): 0.8657
+F1 (macro): 0.8634
+AUC-ROC: 0.9665
+
+[24/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: resnet50 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 23,516,228 | Trainable: 18,001,924 (76.6%)
+Epoch 5: Train Loss=0.2066, Val Loss=0.6000, Val Acc=0.8110
+Epoch 10: Train Loss=0.0711, Val Loss=0.3268, Val Acc=0.8942
+Epoch 15: Train Loss=0.0364, Val Loss=0.3308, Val Acc=0.8945
+Early stopping at epoch 20
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8869
+F1 (weighted): 0.8870
+F1 (macro): 0.8966
+AUC-ROC: 0.9710
+
+[25/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Downloading: "https://download.pytorch.org/models/efficientnet_b4_rwightman-23ab8bcd.pth" to /root/.cache/torch/hub/checkpoints/efficientnet_b4_rwightman-23ab8bcd.pth
+100%|██████████| 74.5M/74.5M [00:00<00:00, 175MB/s] 
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3654, Val Loss=1.3753, Val Acc=0.3061
+Epoch 10: Train Loss=1.3475, Val Loss=1.3640, Val Acc=0.3858
+Epoch 15: Train Loss=1.3789, Val Loss=1.3591, Val Acc=0.4183
+Epoch 20: Train Loss=1.3517, Val Loss=1.3577, Val Acc=0.4151
+Epoch 25: Train Loss=1.3556, Val Loss=1.3587, Val Acc=0.3965
+Early stopping at epoch 29
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.4117
+F1 (weighted): 0.4182
+F1 (macro): 0.3115
+AUC-ROC: 0.6610
+
+[26/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3719, Val Loss=1.3791, Val Acc=0.3112
+Epoch 10: Train Loss=1.3977, Val Loss=1.3753, Val Acc=0.3254
+Epoch 15: Train Loss=1.3750, Val Loss=1.3752, Val Acc=0.3140
+Epoch 20: Train Loss=1.3527, Val Loss=1.3728, Val Acc=0.3225
+Epoch 25: Train Loss=1.3601, Val Loss=1.3704, Val Acc=0.3348
+Epoch 30: Train Loss=1.3422, Val Loss=1.3684, Val Acc=0.3392
+Epoch 35: Train Loss=1.3474, Val Loss=1.3654, Val Acc=0.3461
+Epoch 40: Train Loss=1.3376, Val Loss=1.3605, Val Acc=0.3663
+Epoch 45: Train Loss=1.3151, Val Loss=1.3581, Val Acc=0.3805
+Epoch 50: Train Loss=1.2917, Val Loss=1.3543, Val Acc=0.3997
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.4126
+F1 (weighted): 0.3998
+F1 (macro): 0.3271
+AUC-ROC: 0.6173
+
+[27/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3532, Val Loss=1.3732, Val Acc=0.3260
+Epoch 10: Train Loss=1.3173, Val Loss=1.3580, Val Acc=0.4271
+Epoch 15: Train Loss=1.3419, Val Loss=1.3491, Val Acc=0.4674
+Epoch 20: Train Loss=1.2851, Val Loss=1.3441, Val Acc=0.4661
+Epoch 25: Train Loss=1.2802, Val Loss=1.3420, Val Acc=0.4595
+Epoch 30: Train Loss=1.2400, Val Loss=1.3391, Val Acc=0.4507
+Epoch 35: Train Loss=1.2332, Val Loss=1.3341, Val Acc=0.4479
+Epoch 40: Train Loss=1.1744, Val Loss=1.3291, Val Acc=0.4513
+Epoch 45: Train Loss=1.1207, Val Loss=1.3203, Val Acc=0.4539
+Epoch 50: Train Loss=1.0742, Val Loss=1.3010, Val Acc=0.4917
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5005
+F1 (weighted): 0.4773
+F1 (macro): 0.4179
+AUC-ROC: 0.7684
+
+[28/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3588, Val Loss=1.3760, Val Acc=0.3351
+Epoch 10: Train Loss=1.3668, Val Loss=1.3670, Val Acc=0.3669
+Epoch 15: Train Loss=1.3262, Val Loss=1.3631, Val Acc=0.3739
+Epoch 20: Train Loss=1.2883, Val Loss=1.3575, Val Acc=0.3896
+Epoch 25: Train Loss=1.2561, Val Loss=1.3515, Val Acc=0.4088
+Epoch 30: Train Loss=1.2266, Val Loss=1.3454, Val Acc=0.4142
+Epoch 35: Train Loss=1.1886, Val Loss=1.3367, Val Acc=0.4243
+Epoch 40: Train Loss=1.1580, Val Loss=1.3233, Val Acc=0.4551
+Epoch 45: Train Loss=1.0778, Val Loss=1.3096, Val Acc=0.4772
+Epoch 50: Train Loss=1.0261, Val Loss=1.2917, Val Acc=0.4920
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5090
+F1 (weighted): 0.4839
+F1 (macro): 0.4428
+AUC-ROC: 0.7290
+
+[29/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3873, Val Loss=1.3610, Val Acc=0.4069
+Epoch 10: Train Loss=1.3563, Val Loss=1.3569, Val Acc=0.4123
+Epoch 15: Train Loss=1.3512, Val Loss=1.3545, Val Acc=0.4139
+Epoch 20: Train Loss=1.3582, Val Loss=1.3512, Val Acc=0.4265
+Epoch 25: Train Loss=1.3421, Val Loss=1.3466, Val Acc=0.4504
+Epoch 30: Train Loss=1.3104, Val Loss=1.3469, Val Acc=0.4400
+Epoch 35: Train Loss=1.3306, Val Loss=1.3403, Val Acc=0.4734
+Epoch 40: Train Loss=1.3105, Val Loss=1.3372, Val Acc=0.4917
+Epoch 45: Train Loss=1.3029, Val Loss=1.3314, Val Acc=0.5194
+Epoch 50: Train Loss=1.3020, Val Loss=1.3280, Val Acc=0.5335
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5452
+F1 (weighted): 0.5468
+F1 (macro): 0.4696
+AUC-ROC: 0.7625
+
+[30/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3724, Val Loss=1.3729, Val Acc=0.3512
+Epoch 10: Train Loss=1.3591, Val Loss=1.3661, Val Acc=0.3754
+Epoch 15: Train Loss=1.3429, Val Loss=1.3648, Val Acc=0.3780
+Epoch 20: Train Loss=1.3700, Val Loss=1.3602, Val Acc=0.3918
+Epoch 25: Train Loss=1.3326, Val Loss=1.3514, Val Acc=0.4353
+Epoch 30: Train Loss=1.3430, Val Loss=1.3437, Val Acc=0.4646
+Epoch 35: Train Loss=1.3406, Val Loss=1.3422, Val Acc=0.4756
+Epoch 40: Train Loss=1.3077, Val Loss=1.3396, Val Acc=0.4661
+Epoch 45: Train Loss=1.3128, Val Loss=1.3373, Val Acc=0.4737
+Epoch 50: Train Loss=1.3054, Val Loss=1.3345, Val Acc=0.4765
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.4825
+F1 (weighted): 0.4461
+F1 (macro): 0.3767
+AUC-ROC: 0.7036
+
+[31/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3699, Val Loss=1.3526, Val Acc=0.4598
+Epoch 10: Train Loss=1.3186, Val Loss=1.3399, Val Acc=0.4822
+Epoch 15: Train Loss=1.2884, Val Loss=1.3254, Val Acc=0.5260
+Epoch 20: Train Loss=1.2687, Val Loss=1.3088, Val Acc=0.5534
+Epoch 25: Train Loss=1.2347, Val Loss=1.2847, Val Acc=0.5906
+Epoch 30: Train Loss=1.1576, Val Loss=1.2659, Val Acc=0.6063
+Epoch 35: Train Loss=1.1314, Val Loss=1.2194, Val Acc=0.6324
+Epoch 40: Train Loss=1.0117, Val Loss=1.1725, Val Acc=0.6598
+Epoch 45: Train Loss=0.9306, Val Loss=1.1257, Val Acc=0.6680
+Epoch 50: Train Loss=0.8682, Val Loss=1.0672, Val Acc=0.6746
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6894
+F1 (weighted): 0.6731
+F1 (macro): 0.6177
+AUC-ROC: 0.8552
+
+[32/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3543, Val Loss=1.3614, Val Acc=0.4126
+Epoch 10: Train Loss=1.3239, Val Loss=1.3439, Val Acc=0.4671
+Epoch 15: Train Loss=1.2850, Val Loss=1.3341, Val Acc=0.4800
+Epoch 20: Train Loss=1.2753, Val Loss=1.3190, Val Acc=0.5137
+Epoch 25: Train Loss=1.2078, Val Loss=1.2871, Val Acc=0.5660
+Epoch 30: Train Loss=1.1806, Val Loss=1.2525, Val Acc=0.5802
+Epoch 35: Train Loss=1.1316, Val Loss=1.2117, Val Acc=0.6022
+Epoch 40: Train Loss=1.0127, Val Loss=1.1778, Val Acc=0.6208
+Epoch 45: Train Loss=0.9299, Val Loss=1.1339, Val Acc=0.6564
+Epoch 50: Train Loss=0.8628, Val Loss=1.0658, Val Acc=0.6756
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6800
+F1 (weighted): 0.6644
+F1 (macro): 0.6115
+AUC-ROC: 0.8430
+
+[33/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3700, Val Loss=1.3547, Val Acc=0.4447
+Epoch 10: Train Loss=1.3280, Val Loss=1.3522, Val Acc=0.4375
+Epoch 15: Train Loss=1.3338, Val Loss=1.3415, Val Acc=0.4706
+Epoch 20: Train Loss=1.3361, Val Loss=1.3283, Val Acc=0.5134
+Epoch 25: Train Loss=1.3038, Val Loss=1.3184, Val Acc=0.5553
+Epoch 30: Train Loss=1.3003, Val Loss=1.3089, Val Acc=0.5713
+Epoch 35: Train Loss=1.2763, Val Loss=1.2972, Val Acc=0.5921
+Epoch 40: Train Loss=1.2718, Val Loss=1.2864, Val Acc=0.6041
+Epoch 45: Train Loss=1.2578, Val Loss=1.2770, Val Acc=0.6173
+Epoch 50: Train Loss=1.2612, Val Loss=1.2656, Val Acc=0.6299
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6425
+F1 (weighted): 0.6143
+F1 (macro): 0.5417
+AUC-ROC: 0.8253
+
+[34/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3711, Val Loss=1.3692, Val Acc=0.3682
+Epoch 10: Train Loss=1.3715, Val Loss=1.3591, Val Acc=0.4104
+Epoch 15: Train Loss=1.3454, Val Loss=1.3445, Val Acc=0.4718
+Epoch 20: Train Loss=1.3357, Val Loss=1.3269, Val Acc=0.5263
+Epoch 25: Train Loss=1.3264, Val Loss=1.3169, Val Acc=0.5348
+Epoch 30: Train Loss=1.2976, Val Loss=1.3074, Val Acc=0.5597
+Epoch 35: Train Loss=1.3050, Val Loss=1.2988, Val Acc=0.5688
+Epoch 40: Train Loss=1.2815, Val Loss=1.2907, Val Acc=0.5890
+Epoch 45: Train Loss=1.2664, Val Loss=1.2844, Val Acc=0.5940
+Epoch 50: Train Loss=1.2445, Val Loss=1.2754, Val Acc=0.6038
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6161
+F1 (weighted): 0.5901
+F1 (macro): 0.5226
+AUC-ROC: 0.8137
+
+[35/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3434, Val Loss=1.3374, Val Acc=0.5225
+Epoch 10: Train Loss=1.2657, Val Loss=1.3136, Val Acc=0.5650
+Epoch 15: Train Loss=1.2238, Val Loss=1.2675, Val Acc=0.6176
+Epoch 20: Train Loss=1.1607, Val Loss=1.1926, Val Acc=0.6501
+Epoch 25: Train Loss=1.0073, Val Loss=1.0852, Val Acc=0.6828
+Epoch 30: Train Loss=0.8847, Val Loss=0.9597, Val Acc=0.7039
+Epoch 35: Train Loss=0.6776, Val Loss=0.8194, Val Acc=0.7178
+Epoch 40: Train Loss=0.5571, Val Loss=0.7087, Val Acc=0.7357
+Epoch 45: Train Loss=0.4372, Val Loss=0.6297, Val Acc=0.7543
+Epoch 50: Train Loss=0.3333, Val Loss=0.5581, Val Acc=0.7858
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7739
+F1 (weighted): 0.7633
+F1 (macro): 0.7459
+AUC-ROC: 0.9181
+
+[36/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.3418, Val Loss=1.3475, Val Acc=0.4677
+Epoch 10: Train Loss=1.3037, Val Loss=1.3164, Val Acc=0.5257
+Epoch 15: Train Loss=1.2208, Val Loss=1.2698, Val Acc=0.6129
+Epoch 20: Train Loss=1.1348, Val Loss=1.1777, Val Acc=0.6551
+Epoch 25: Train Loss=0.9957, Val Loss=1.0507, Val Acc=0.6806
+Epoch 30: Train Loss=0.8248, Val Loss=0.9188, Val Acc=0.7014
+Epoch 35: Train Loss=0.7115, Val Loss=0.8095, Val Acc=0.7150
+Epoch 40: Train Loss=0.4880, Val Loss=0.7178, Val Acc=0.7137
+Epoch 45: Train Loss=0.3866, Val Loss=0.6381, Val Acc=0.7291
+Epoch 50: Train Loss=0.2751, Val Loss=0.5863, Val Acc=0.7641
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7461
+F1 (weighted): 0.7321
+F1 (macro): 0.7012
+AUC-ROC: 0.9125
+
+[37/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3593, Val Loss=1.3470, Val Acc=0.4608
+Epoch 10: Train Loss=1.3222, Val Loss=1.3256, Val Acc=0.5380
+Epoch 15: Train Loss=1.2991, Val Loss=1.2977, Val Acc=0.6038
+Epoch 20: Train Loss=1.2639, Val Loss=1.2747, Val Acc=0.6337
+Epoch 25: Train Loss=1.2462, Val Loss=1.2641, Val Acc=0.6233
+Epoch 30: Train Loss=1.2074, Val Loss=1.2401, Val Acc=0.6438
+Epoch 35: Train Loss=1.1658, Val Loss=1.2199, Val Acc=0.6507
+Epoch 40: Train Loss=1.1646, Val Loss=1.2091, Val Acc=0.6523
+Epoch 45: Train Loss=1.1368, Val Loss=1.1871, Val Acc=0.6551
+Epoch 50: Train Loss=1.1326, Val Loss=1.1717, Val Acc=0.6611
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6712
+F1 (weighted): 0.6474
+F1 (macro): 0.5895
+AUC-ROC: 0.8568
+
+[38/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3527, Val Loss=1.3536, Val Acc=0.4306
+Epoch 10: Train Loss=1.3313, Val Loss=1.3289, Val Acc=0.5187
+Epoch 15: Train Loss=1.3043, Val Loss=1.3161, Val Acc=0.5392
+Epoch 20: Train Loss=1.2725, Val Loss=1.2904, Val Acc=0.5855
+Epoch 25: Train Loss=1.2443, Val Loss=1.2662, Val Acc=0.6290
+Epoch 30: Train Loss=1.2122, Val Loss=1.2498, Val Acc=0.6409
+Epoch 35: Train Loss=1.1928, Val Loss=1.2423, Val Acc=0.6491
+Epoch 40: Train Loss=1.1694, Val Loss=1.2170, Val Acc=0.6529
+Epoch 45: Train Loss=1.1552, Val Loss=1.1958, Val Acc=0.6542
+Epoch 50: Train Loss=1.1451, Val Loss=1.1867, Val Acc=0.6520
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6690
+F1 (weighted): 0.6482
+F1 (macro): 0.5908
+AUC-ROC: 0.8548
+
+[39/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.2944, Val Loss=1.2957, Val Acc=0.5811
+Epoch 10: Train Loss=1.1182, Val Loss=1.1287, Val Acc=0.6706
+Epoch 15: Train Loss=0.8107, Val Loss=0.8619, Val Acc=0.7165
+Epoch 20: Train Loss=0.5557, Val Loss=0.6760, Val Acc=0.7509
+Epoch 25: Train Loss=0.3796, Val Loss=0.6445, Val Acc=0.7521
+Epoch 30: Train Loss=0.2465, Val Loss=0.6778, Val Acc=0.7521
+Epoch 35: Train Loss=0.2018, Val Loss=0.6137, Val Acc=0.7830
+Early stopping at epoch 36
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7616
+F1 (weighted): 0.7616
+F1 (macro): 0.7484
+AUC-ROC: 0.9207
+
+[40/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.2870, Val Loss=1.2999, Val Acc=0.5830
+Epoch 10: Train Loss=1.0995, Val Loss=1.1377, Val Acc=0.6643
+Epoch 15: Train Loss=0.7864, Val Loss=0.8962, Val Acc=0.7008
+Epoch 20: Train Loss=0.5073, Val Loss=0.6309, Val Acc=0.7518
+Epoch 25: Train Loss=0.3857, Val Loss=0.5869, Val Acc=0.7754
+Epoch 30: Train Loss=0.2691, Val Loss=0.6207, Val Acc=0.7672
+Epoch 35: Train Loss=0.1805, Val Loss=0.5969, Val Acc=0.7865
+Early stopping at epoch 37
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7694
+F1 (weighted): 0.7717
+F1 (macro): 0.7680
+AUC-ROC: 0.9273
+
+[41/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3329, Val Loss=1.3242, Val Acc=0.5263
+Epoch 10: Train Loss=1.2826, Val Loss=1.2758, Val Acc=0.6268
+Epoch 15: Train Loss=1.2194, Val Loss=1.2372, Val Acc=0.6557
+Epoch 20: Train Loss=1.1802, Val Loss=1.2054, Val Acc=0.6652
+Epoch 25: Train Loss=1.1389, Val Loss=1.1785, Val Acc=0.6734
+Epoch 30: Train Loss=1.1030, Val Loss=1.1447, Val Acc=0.6813
+Epoch 35: Train Loss=1.0771, Val Loss=1.1182, Val Acc=0.6857
+Epoch 40: Train Loss=1.0483, Val Loss=1.0962, Val Acc=0.6850
+Epoch 45: Train Loss=1.0099, Val Loss=1.0702, Val Acc=0.6920
+Epoch 50: Train Loss=0.9934, Val Loss=1.0477, Val Acc=0.6961
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6948
+F1 (weighted): 0.6771
+F1 (macro): 0.6224
+AUC-ROC: 0.8710
+
+[42/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.3360, Val Loss=1.3239, Val Acc=0.5291
+Epoch 10: Train Loss=1.2788, Val Loss=1.2865, Val Acc=0.5761
+Epoch 15: Train Loss=1.2253, Val Loss=1.2486, Val Acc=0.6328
+Epoch 20: Train Loss=1.1778, Val Loss=1.2121, Val Acc=0.6542
+Epoch 25: Train Loss=1.1521, Val Loss=1.1812, Val Acc=0.6680
+Epoch 30: Train Loss=1.1095, Val Loss=1.1522, Val Acc=0.6750
+Epoch 35: Train Loss=1.0670, Val Loss=1.1242, Val Acc=0.6781
+Epoch 40: Train Loss=1.0569, Val Loss=1.0947, Val Acc=0.6872
+Epoch 45: Train Loss=1.0196, Val Loss=1.0746, Val Acc=0.6860
+Epoch 50: Train Loss=0.9871, Val Loss=1.0546, Val Acc=0.6860
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6970
+F1 (weighted): 0.6754
+F1 (macro): 0.6183
+AUC-ROC: 0.8690
+
+[43/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.1676, Val Loss=1.1677, Val Acc=0.6520
+Epoch 10: Train Loss=0.6719, Val Loss=0.6317, Val Acc=0.7688
+Epoch 15: Train Loss=0.4319, Val Loss=0.4408, Val Acc=0.8369
+Epoch 20: Train Loss=0.2376, Val Loss=0.4079, Val Acc=0.8510
+Epoch 25: Train Loss=0.2130, Val Loss=0.3864, Val Acc=0.8690
+Epoch 30: Train Loss=0.1266, Val Loss=0.3876, Val Acc=0.8728
+Early stopping at epoch 33
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8576
+F1 (weighted): 0.8571
+F1 (macro): 0.8573
+AUC-ROC: 0.9593
+
+[44/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=1.1534, Val Loss=1.1459, Val Acc=0.6517
+Epoch 10: Train Loss=0.6405, Val Loss=0.6565, Val Acc=0.7540
+Epoch 15: Train Loss=0.3557, Val Loss=0.4600, Val Acc=0.8331
+Epoch 20: Train Loss=0.2609, Val Loss=0.4026, Val Acc=0.8529
+Epoch 25: Train Loss=0.1810, Val Loss=0.3999, Val Acc=0.8652
+Epoch 30: Train Loss=0.1112, Val Loss=0.3937, Val Acc=0.8737
+Epoch 35: Train Loss=0.0708, Val Loss=0.3966, Val Acc=0.8769
+Epoch 40: Train Loss=0.0872, Val Loss=0.4152, Val Acc=0.8781
+Early stopping at epoch 43
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8630
+F1 (weighted): 0.8631
+F1 (macro): 0.8632
+AUC-ROC: 0.9626
+
+[45/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.2854, Val Loss=1.2875, Val Acc=0.6003
+Epoch 10: Train Loss=1.1946, Val Loss=1.2079, Val Acc=0.6617
+Epoch 15: Train Loss=1.1270, Val Loss=1.1410, Val Acc=0.6624
+Epoch 20: Train Loss=1.0571, Val Loss=1.0871, Val Acc=0.6784
+Epoch 25: Train Loss=1.0080, Val Loss=1.0600, Val Acc=0.6734
+Epoch 30: Train Loss=0.9727, Val Loss=1.0203, Val Acc=0.6882
+Epoch 35: Train Loss=0.9418, Val Loss=0.9852, Val Acc=0.6917
+Epoch 40: Train Loss=0.9083, Val Loss=0.9620, Val Acc=0.6957
+Epoch 45: Train Loss=0.8816, Val Loss=0.9225, Val Acc=0.6967
+Epoch 50: Train Loss=0.8578, Val Loss=0.9031, Val Acc=0.6951
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7052
+F1 (weighted): 0.6954
+F1 (macro): 0.6581
+AUC-ROC: 0.8909
+
+[46/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: efficientnet_b4 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 7,172 (0.0%)
+Epoch 5: Train Loss=1.2926, Val Loss=1.2855, Val Acc=0.6025
+Epoch 10: Train Loss=1.2010, Val Loss=1.2106, Val Acc=0.6706
+Epoch 15: Train Loss=1.1231, Val Loss=1.1594, Val Acc=0.6769
+Epoch 20: Train Loss=1.0533, Val Loss=1.0984, Val Acc=0.6847
+Epoch 25: Train Loss=1.0099, Val Loss=1.0497, Val Acc=0.6935
+Epoch 30: Train Loss=0.9716, Val Loss=1.0110, Val Acc=0.7036
+Epoch 35: Train Loss=0.9401, Val Loss=0.9749, Val Acc=0.7077
+Epoch 40: Train Loss=0.9299, Val Loss=0.9480, Val Acc=0.7024
+Epoch 45: Train Loss=0.8822, Val Loss=0.9200, Val Acc=0.7099
+Epoch 50: Train Loss=0.8751, Val Loss=0.9014, Val Acc=0.7090
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7137
+F1 (weighted): 0.7050
+F1 (macro): 0.6678
+AUC-ROC: 0.8917
+
+[47/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=0.7468, Val Loss=0.6615, Val Acc=0.7581
+Epoch 10: Train Loss=0.3931, Val Loss=0.3851, Val Acc=0.8576
+Epoch 15: Train Loss=0.2721, Val Loss=0.3313, Val Acc=0.8828
+Epoch 20: Train Loss=0.1765, Val Loss=0.3311, Val Acc=0.8835
+Epoch 25: Train Loss=0.1679, Val Loss=0.3155, Val Acc=0.8948
+Epoch 30: Train Loss=0.0965, Val Loss=0.3079, Val Acc=0.9093
+Early stopping at epoch 32
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8879
+F1 (weighted): 0.8879
+F1 (macro): 0.8885
+AUC-ROC: 0.9737
+
+[48/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: efficientnet_b4 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 17,555,788 | Trainable: 17,484,012 (99.6%)
+Epoch 5: Train Loss=0.7368, Val Loss=0.6718, Val Acc=0.7764
+Epoch 10: Train Loss=0.3942, Val Loss=0.3779, Val Acc=0.8690
+Epoch 15: Train Loss=0.2425, Val Loss=0.3796, Val Acc=0.8605
+Epoch 20: Train Loss=0.1910, Val Loss=0.3108, Val Acc=0.8917
+Epoch 25: Train Loss=0.1209, Val Loss=0.3247, Val Acc=0.8973
+Epoch 30: Train Loss=0.0966, Val Loss=0.3209, Val Acc=0.8967
+Early stopping at epoch 33
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8891
+F1 (weighted): 0.8891
+F1 (macro): 0.8923
+AUC-ROC: 0.9726
+
+[49/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Downloading: "https://download.pytorch.org/models/vit_b_16-c867db91.pth" to /root/.cache/torch/hub/checkpoints/vit_b_16-c867db91.pth
+100%|██████████| 330M/330M [00:01<00:00, 201MB/s] 
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3779, Val Loss=1.4001, Val Acc=0.2643
+Epoch 10: Train Loss=1.2859, Val Loss=1.3868, Val Acc=0.2872
+Epoch 15: Train Loss=1.1809, Val Loss=1.3748, Val Acc=0.3087
+Epoch 20: Train Loss=1.1925, Val Loss=1.3603, Val Acc=0.3310
+Epoch 25: Train Loss=1.1415, Val Loss=1.3472, Val Acc=0.3490
+Epoch 30: Train Loss=1.0982, Val Loss=1.3348, Val Acc=0.3609
+Epoch 35: Train Loss=1.1041, Val Loss=1.3213, Val Acc=0.3761
+Epoch 40: Train Loss=1.0566, Val Loss=1.3064, Val Acc=0.3893
+Epoch 45: Train Loss=0.9744, Val Loss=1.2903, Val Acc=0.4057
+Epoch 50: Train Loss=0.9726, Val Loss=1.2749, Val Acc=0.4208
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.4176
+F1 (weighted): 0.4155
+F1 (macro): 0.3916
+AUC-ROC: 0.6059
+
+[50/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3885, Val Loss=1.3510, Val Acc=0.3969
+Epoch 10: Train Loss=1.2667, Val Loss=1.3264, Val Acc=0.4126
+Epoch 15: Train Loss=1.2478, Val Loss=1.3061, Val Acc=0.4306
+Epoch 20: Train Loss=1.1936, Val Loss=1.2857, Val Acc=0.4517
+Epoch 25: Train Loss=1.1678, Val Loss=1.2660, Val Acc=0.4671
+Epoch 30: Train Loss=1.1183, Val Loss=1.2480, Val Acc=0.4844
+Epoch 35: Train Loss=1.1135, Val Loss=1.2303, Val Acc=0.4961
+Epoch 40: Train Loss=0.9911, Val Loss=1.2143, Val Acc=0.5121
+Epoch 45: Train Loss=1.0260, Val Loss=1.2005, Val Acc=0.5260
+Epoch 50: Train Loss=1.0030, Val Loss=1.1875, Val Acc=0.5357
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5329
+F1 (weighted): 0.5224
+F1 (macro): 0.4765
+AUC-ROC: 0.7438
+
+[51/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.2415, Val Loss=0.9696, Val Acc=0.6441
+Epoch 10: Train Loss=0.0316, Val Loss=1.0622, Val Acc=0.6369
+Early stopping at epoch 15
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6498
+F1 (weighted): 0.6474
+F1 (macro): 0.6080
+AUC-ROC: 0.8210
+
+[52/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 5-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 20 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.3278, Val Loss=1.0654, Val Acc=0.5254
+Epoch 10: Train Loss=0.0476, Val Loss=1.2290, Val Acc=0.5824
+Epoch 15: Train Loss=0.0114, Val Loss=1.4080, Val Acc=0.5685
+Early stopping at epoch 17
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6724
+F1 (weighted): 0.6619
+F1 (macro): 0.6138
+AUC-ROC: 0.8351
+
+[53/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3305, Val Loss=1.3945, Val Acc=0.2542
+Epoch 10: Train Loss=1.2265, Val Loss=1.3688, Val Acc=0.2885
+Epoch 15: Train Loss=1.2069, Val Loss=1.3397, Val Acc=0.3238
+Epoch 20: Train Loss=1.1615, Val Loss=1.3127, Val Acc=0.3565
+Epoch 25: Train Loss=1.1245, Val Loss=1.2796, Val Acc=0.3937
+Epoch 30: Train Loss=1.0757, Val Loss=1.2507, Val Acc=0.4246
+Epoch 35: Train Loss=1.0229, Val Loss=1.2322, Val Acc=0.4535
+Epoch 40: Train Loss=0.9542, Val Loss=1.2093, Val Acc=0.4860
+Epoch 45: Train Loss=0.9547, Val Loss=1.1831, Val Acc=0.5106
+Epoch 50: Train Loss=0.9221, Val Loss=1.1525, Val Acc=0.5395
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.5364
+F1 (weighted): 0.5355
+F1 (macro): 0.5099
+AUC-ROC: 0.7430
+
+[54/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.4030, Val Loss=1.3493, Val Acc=0.3654
+Epoch 10: Train Loss=1.3474, Val Loss=1.3150, Val Acc=0.3994
+Epoch 15: Train Loss=1.2585, Val Loss=1.2789, Val Acc=0.4501
+Epoch 20: Train Loss=1.2343, Val Loss=1.2351, Val Acc=0.5106
+Epoch 25: Train Loss=1.1347, Val Loss=1.1903, Val Acc=0.5515
+Epoch 30: Train Loss=1.0990, Val Loss=1.1663, Val Acc=0.5631
+Epoch 35: Train Loss=1.0340, Val Loss=1.1521, Val Acc=0.5701
+Epoch 40: Train Loss=1.0169, Val Loss=1.1339, Val Acc=0.5880
+Epoch 45: Train Loss=0.9664, Val Loss=1.0960, Val Acc=0.6009
+Epoch 50: Train Loss=0.9759, Val Loss=1.0631, Val Acc=0.6236
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6151
+F1 (weighted): 0.6053
+F1 (macro): 0.5638
+AUC-ROC: 0.8109
+
+[55/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.5368, Val Loss=0.9191, Val Acc=0.6639
+Epoch 10: Train Loss=0.1805, Val Loss=0.7431, Val Acc=0.7550
+Epoch 15: Train Loss=0.0561, Val Loss=1.0523, Val Acc=0.6769
+Early stopping at epoch 17
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6929
+F1 (weighted): 0.6844
+F1 (macro): 0.6474
+AUC-ROC: 0.8683
+
+[56/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 10-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 40 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.5294, Val Loss=0.7687, Val Acc=0.6800
+Epoch 10: Train Loss=0.2455, Val Loss=0.8325, Val Acc=0.6866
+Epoch 15: Train Loss=0.0574, Val Loss=0.8777, Val Acc=0.6961
+Epoch 20: Train Loss=0.0180, Val Loss=0.8229, Val Acc=0.7272
+Early stopping at epoch 21
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7276
+F1 (weighted): 0.7083
+F1 (macro): 0.6791
+AUC-ROC: 0.8828
+
+[57/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3037, Val Loss=1.3826, Val Acc=0.2844
+Epoch 10: Train Loss=1.2427, Val Loss=1.3229, Val Acc=0.3550
+Epoch 15: Train Loss=1.1269, Val Loss=1.2774, Val Acc=0.4060
+Epoch 20: Train Loss=1.0792, Val Loss=1.2259, Val Acc=0.4595
+Epoch 25: Train Loss=1.0281, Val Loss=1.1750, Val Acc=0.5165
+Epoch 30: Train Loss=0.9328, Val Loss=1.1294, Val Acc=0.5565
+Epoch 35: Train Loss=0.9171, Val Loss=1.1004, Val Acc=0.5798
+Epoch 40: Train Loss=0.8779, Val Loss=1.0572, Val Acc=0.6126
+Epoch 45: Train Loss=0.8366, Val Loss=1.0242, Val Acc=0.6236
+Epoch 50: Train Loss=0.8329, Val Loss=0.9927, Val Acc=0.6413
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6321
+F1 (weighted): 0.6227
+F1 (macro): 0.5885
+AUC-ROC: 0.8224
+
+[58/72] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3651, Val Loss=1.3072, Val Acc=0.4391
+Epoch 10: Train Loss=1.2703, Val Loss=1.2425, Val Acc=0.5128
+Epoch 15: Train Loss=1.1667, Val Loss=1.1797, Val Acc=0.5748
+Epoch 20: Train Loss=1.0989, Val Loss=1.1324, Val Acc=0.6000
+Epoch 25: Train Loss=1.0415, Val Loss=1.0933, Val Acc=0.6293
+Epoch 30: Train Loss=0.9687, Val Loss=1.0492, Val Acc=0.6529
+
+
+
+
+
+
+
+
+
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Downloading: "https://download.pytorch.org/models/vit_b_16-c867db91.pth" to /root/.cache/torch/hub/checkpoints/vit_b_16-c867db91.pth
+100%|██████████| 330M/330M [00:05<00:00, 64.4MB/s] 
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3037, Val Loss=1.3826, Val Acc=0.2844
+Epoch 10: Train Loss=1.2427, Val Loss=1.3229, Val Acc=0.3550
+Epoch 15: Train Loss=1.1269, Val Loss=1.2774, Val Acc=0.4060
+Epoch 20: Train Loss=1.0792, Val Loss=1.2259, Val Acc=0.4595
+Epoch 25: Train Loss=1.0281, Val Loss=1.1750, Val Acc=0.5165
+Epoch 30: Train Loss=0.9328, Val Loss=1.1294, Val Acc=0.5565
+Epoch 35: Train Loss=0.9171, Val Loss=1.1004, Val Acc=0.5798
+Epoch 40: Train Loss=0.8779, Val Loss=1.0572, Val Acc=0.6126
+Epoch 45: Train Loss=0.8366, Val Loss=1.0242, Val Acc=0.6236
+Epoch 50: Train Loss=0.8329, Val Loss=0.9927, Val Acc=0.6413
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6321
+F1 (weighted): 0.6227
+F1 (macro): 0.5885
+AUC-ROC: 0.8224
+
+[2/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.3651, Val Loss=1.3072, Val Acc=0.4391
+Epoch 10: Train Loss=1.2703, Val Loss=1.2425, Val Acc=0.5128
+Epoch 15: Train Loss=1.1667, Val Loss=1.1797, Val Acc=0.5748
+Epoch 20: Train Loss=1.0989, Val Loss=1.1324, Val Acc=0.6000
+Epoch 25: Train Loss=1.0415, Val Loss=1.0933, Val Acc=0.6293
+Epoch 30: Train Loss=0.9687, Val Loss=1.0492, Val Acc=0.6529
+Epoch 35: Train Loss=0.9202, Val Loss=1.0040, Val Acc=0.6794
+Epoch 40: Train Loss=0.8818, Val Loss=0.9741, Val Acc=0.6885
+Epoch 45: Train Loss=0.8630, Val Loss=0.9536, Val Acc=0.6910
+Epoch 50: Train Loss=0.8311, Val Loss=0.9293, Val Acc=0.6983
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.6847
+F1 (weighted): 0.6837
+F1 (macro): 0.6477
+AUC-ROC: 0.8675
+
+[3/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.4530, Val Loss=0.6325, Val Acc=0.7502
+Epoch 10: Train Loss=0.1021, Val Loss=0.4865, Val Acc=0.8151
+Epoch 15: Train Loss=0.0169, Val Loss=0.6672, Val Acc=0.7698
+Early stopping at epoch 20
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8044
+F1 (weighted): 0.8016
+F1 (macro): 0.7965
+AUC-ROC: 0.9265
+
+[4/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 20-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 80 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.5010, Val Loss=0.6617, Val Acc=0.7348
+Epoch 10: Train Loss=0.1326, Val Loss=0.6337, Val Acc=0.7528
+Epoch 15: Train Loss=0.0294, Val Loss=0.6954, Val Acc=0.7578
+Early stopping at epoch 18
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7994
+F1 (weighted): 0.7962
+F1 (macro): 0.7938
+AUC-ROC: 0.9230
+
+[5/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.2257, Val Loss=1.3360, Val Acc=0.3329
+Epoch 10: Train Loss=1.0930, Val Loss=1.2061, Val Acc=0.4939
+Epoch 15: Train Loss=0.9819, Val Loss=1.1258, Val Acc=0.5644
+Epoch 20: Train Loss=0.8697, Val Loss=1.0570, Val Acc=0.6135
+Epoch 25: Train Loss=0.8252, Val Loss=0.9828, Val Acc=0.6507
+Epoch 30: Train Loss=0.7823, Val Loss=0.9420, Val Acc=0.6665
+Epoch 35: Train Loss=0.7091, Val Loss=0.8979, Val Acc=0.6822
+Epoch 40: Train Loss=0.7288, Val Loss=0.8743, Val Acc=0.6866
+Epoch 45: Train Loss=0.6714, Val Loss=0.8438, Val Acc=0.6989
+Epoch 50: Train Loss=0.6313, Val Loss=0.8224, Val Acc=0.7083
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7102
+F1 (weighted): 0.7040
+F1 (macro): 0.6629
+AUC-ROC: 0.8867
+
+[6/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.2405, Val Loss=1.2356, Val Acc=0.5165
+Epoch 10: Train Loss=1.1033, Val Loss=1.1186, Val Acc=0.6110
+Epoch 15: Train Loss=0.9888, Val Loss=1.0318, Val Acc=0.6649
+Epoch 20: Train Loss=0.9116, Val Loss=0.9641, Val Acc=0.6910
+Epoch 25: Train Loss=0.8465, Val Loss=0.9088, Val Acc=0.7055
+Epoch 30: Train Loss=0.7873, Val Loss=0.8622, Val Acc=0.7080
+Epoch 35: Train Loss=0.7520, Val Loss=0.8398, Val Acc=0.7074
+Epoch 40: Train Loss=0.7015, Val Loss=0.8070, Val Acc=0.7150
+Epoch 45: Train Loss=0.6670, Val Loss=0.7901, Val Acc=0.7137
+Epoch 50: Train Loss=0.6563, Val Loss=0.7643, Val Acc=0.7235
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7291
+F1 (weighted): 0.7215
+F1 (macro): 0.6792
+AUC-ROC: 0.8959
+
+[7/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.3398, Val Loss=0.5014, Val Acc=0.8091
+Epoch 10: Train Loss=0.0603, Val Loss=0.5016, Val Acc=0.8356
+Early stopping at epoch 15
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8091
+F1 (weighted): 0.8105
+F1 (macro): 0.7954
+AUC-ROC: 0.9411
+
+[8/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 50-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 200 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.3479, Val Loss=0.6293, Val Acc=0.7424
+Epoch 10: Train Loss=0.1055, Val Loss=0.4638, Val Acc=0.8378
+Epoch 15: Train Loss=0.0406, Val Loss=0.8280, Val Acc=0.7657
+Early stopping at epoch 20
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8362
+F1 (weighted): 0.8345
+F1 (macro): 0.8311
+AUC-ROC: 0.9490
+
+[9/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.1144, Val Loss=1.2374, Val Acc=0.4526
+Epoch 10: Train Loss=0.9465, Val Loss=1.0681, Val Acc=0.6290
+Epoch 15: Train Loss=0.8296, Val Loss=0.9627, Val Acc=0.6872
+Epoch 20: Train Loss=0.7699, Val Loss=0.8763, Val Acc=0.7128
+Epoch 25: Train Loss=0.7236, Val Loss=0.8211, Val Acc=0.7238
+Epoch 30: Train Loss=0.6740, Val Loss=0.7800, Val Acc=0.7301
+Epoch 35: Train Loss=0.6482, Val Loss=0.7451, Val Acc=0.7408
+Epoch 40: Train Loss=0.6339, Val Loss=0.7165, Val Acc=0.7480
+Epoch 45: Train Loss=0.5940, Val Loss=0.6919, Val Acc=0.7550
+Epoch 50: Train Loss=0.5772, Val Loss=0.6704, Val Acc=0.7587
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7587
+F1 (weighted): 0.7495
+F1 (macro): 0.7127
+AUC-ROC: 0.9128
+
+[10/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=1.1219, Val Loss=1.1208, Val Acc=0.6117
+Epoch 10: Train Loss=0.9239, Val Loss=0.9793, Val Acc=0.6891
+Epoch 15: Train Loss=0.8278, Val Loss=0.8712, Val Acc=0.7178
+Epoch 20: Train Loss=0.7699, Val Loss=0.8147, Val Acc=0.7361
+Epoch 25: Train Loss=0.7229, Val Loss=0.7611, Val Acc=0.7430
+Epoch 30: Train Loss=0.6689, Val Loss=0.7265, Val Acc=0.7528
+Epoch 35: Train Loss=0.6452, Val Loss=0.6981, Val Acc=0.7584
+Epoch 40: Train Loss=0.6235, Val Loss=0.6779, Val Acc=0.7622
+Epoch 45: Train Loss=0.5960, Val Loss=0.6577, Val Acc=0.7669
+Epoch 50: Train Loss=0.5683, Val Loss=0.6409, Val Acc=0.7713
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.7726
+F1 (weighted): 0.7648
+F1 (macro): 0.7304
+AUC-ROC: 0.9182
+
+[11/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.2761, Val Loss=0.3643, Val Acc=0.8636
+Epoch 10: Train Loss=0.1203, Val Loss=0.4084, Val Acc=0.8501
+Early stopping at epoch 15
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8683
+F1 (weighted): 0.8672
+F1 (macro): 0.8662
+AUC-ROC: 0.9635
+
+[12/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 100-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 400 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.1387, Val Loss=0.4524, Val Acc=0.8315
+Epoch 10: Train Loss=0.1264, Val Loss=0.5370, Val Acc=0.8293
+Early stopping at epoch 13
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8595
+F1 (weighted): 0.8571
+F1 (macro): 0.8573
+AUC-ROC: 0.9586
+
+[13/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=0.9581, Val Loss=1.0370, Val Acc=0.6494
+Epoch 10: Train Loss=0.7851, Val Loss=0.8569, Val Acc=0.7140
+Epoch 15: Train Loss=0.6940, Val Loss=0.7500, Val Acc=0.7380
+Epoch 20: Train Loss=0.6214, Val Loss=0.6936, Val Acc=0.7531
+Epoch 25: Train Loss=0.5925, Val Loss=0.6507, Val Acc=0.7742
+Epoch 30: Train Loss=0.5438, Val Loss=0.6210, Val Acc=0.7839
+Epoch 35: Train Loss=0.5225, Val Loss=0.5883, Val Acc=0.7965
+Epoch 40: Train Loss=0.4949, Val Loss=0.5710, Val Acc=0.7997
+Epoch 45: Train Loss=0.4874, Val Loss=0.5524, Val Acc=0.8066
+Epoch 50: Train Loss=0.4627, Val Loss=0.5427, Val Acc=0.8120
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8019
+F1 (weighted): 0.7980
+F1 (macro): 0.7801
+AUC-ROC: 0.9335
+
+[14/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: vit_b_16 | Strategy: head_only
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 3,076 (0.0%)
+Epoch 5: Train Loss=0.9509, Val Loss=0.9705, Val Acc=0.6854
+Epoch 10: Train Loss=0.7723, Val Loss=0.8008, Val Acc=0.7332
+Epoch 15: Train Loss=0.6800, Val Loss=0.7151, Val Acc=0.7490
+Epoch 20: Train Loss=0.6139, Val Loss=0.6579, Val Acc=0.7694
+Epoch 25: Train Loss=0.5882, Val Loss=0.6245, Val Acc=0.7795
+Epoch 30: Train Loss=0.5441, Val Loss=0.5957, Val Acc=0.7890
+Epoch 35: Train Loss=0.5254, Val Loss=0.5773, Val Acc=0.7943
+Epoch 40: Train Loss=0.5022, Val Loss=0.5597, Val Acc=0.8022
+Epoch 45: Train Loss=0.4791, Val Loss=0.5459, Val Acc=0.8085
+Epoch 50: Train Loss=0.4749, Val Loss=0.5322, Val Acc=0.8120
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8120
+F1 (weighted): 0.8082
+F1 (macro): 0.7910
+AUC-ROC: 0.9349
+
+[15/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 42
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.1905, Val Loss=0.4254, Val Acc=0.8328
+Epoch 10: Train Loss=0.0949, Val Loss=0.4106, Val Acc=0.8570
+Epoch 15: Train Loss=0.0217, Val Loss=0.3637, Val Acc=0.8876
+Epoch 20: Train Loss=0.0097, Val Loss=0.3979, Val Acc=0.8954
+Early stopping at epoch 24
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8945
+F1 (weighted): 0.8943
+F1 (macro): 0.8997
+AUC-ROC: 0.9737
+
+[16/16] Running experiment...
+
+============================================================
+Dataset: COVID-19 Radiography | 200-shot
+Model: vit_b_16 | Strategy: layer_wise
+Augmentation: standard | Seed: 456
+============================================================
+Train: 800 | Val: 3175 | Test: 3175
+Total params: 85,801,732 | Trainable: 42,683,140 (49.7%)
+Epoch 5: Train Loss=0.1851, Val Loss=0.3674, Val Acc=0.8702
+Epoch 10: Train Loss=0.0851, Val Loss=0.3908, Val Acc=0.8822
+Epoch 15: Train Loss=0.0402, Val Loss=0.6044, Val Acc=0.8476
+Epoch 20: Train Loss=0.0150, Val Loss=0.3762, Val Acc=0.8957
+Early stopping at epoch 21
+
+============================================================
+TEST RESULTS
+============================================================
+Accuracy: 0.8885
+F1 (weighted): 0.8884
+F1 (macro): 0.8941
+AUC-ROC: 0.9710
+
+✅ COVID-19 Radiography complete! Results saved to: /kaggle/working/results_covid19
+
+######################################################################
+# ALL EXPERIMENTS COMPLETE!
+##################
