@@ -1,0 +1,193 @@
+{
+  "experiment_config": {
+    "dataset": "pneumonia",
+    "dataset_name": "Chest X-Ray Pneumonia",
+    "model_name": "resnet50",
+    "sample_size": 20,
+    "finetune_strategy": "head_only",
+    "augmentation": "standard",
+    "pretrained_source": "ImageNet",
+    "num_classes": 2,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs_trained": 16,
+    "training_time_seconds": 140.91612195968628,
+    "total_parameters": 23512130,
+    "trainable_parameters": 4098,
+    "seed": 42,
+    "test_mode": false
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6752754092216492,
+      "train_acc": 0.575,
+      "val_loss": 0.59514161052693,
+      "val_acc": 0.7463026166097838,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6706764221191406,
+      "train_acc": 0.55,
+      "val_loss": 0.5932001457957549,
+      "val_acc": 0.7565415244596132,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6858864665031433,
+      "train_acc": 0.575,
+      "val_loss": 0.5701886854887822,
+      "val_acc": 0.7519908987485779,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6608048439025879,
+      "train_acc": 0.675,
+      "val_loss": 0.5535862270204416,
+      "val_acc": 0.7463026166097838,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6741694927215576,
+      "train_acc": 0.625,
+      "val_loss": 0.5403799007438013,
+      "val_acc": 0.7349260523321957,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6793946504592896,
+      "train_acc": 0.625,
+      "val_loss": 0.5379845957029123,
+      "val_acc": 0.7383390216154722,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.681282377243042,
+      "train_acc": 0.6,
+      "val_loss": 0.5482486245032735,
+      "val_acc": 0.7679180887372014,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.6661993026733398,
+      "train_acc": 0.65,
+      "val_loss": 0.558826733164413,
+      "val_acc": 0.7952218430034129,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.6848008632659912,
+      "train_acc": 0.55,
+      "val_loss": 0.5673225806163575,
+      "val_acc": 0.8168373151308305,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.6794133424758911,
+      "train_acc": 0.575,
+      "val_loss": 0.5724745665393999,
+      "val_acc": 0.8304891922639362,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6359957218170166,
+      "train_acc": 0.775,
+      "val_loss": 0.5787558731908006,
+      "val_acc": 0.820250284414107,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6421571731567383,
+      "train_acc": 0.75,
+      "val_loss": 0.5841689738397305,
+      "val_acc": 0.8270762229806599,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6116127610206604,
+      "train_acc": 0.85,
+      "val_loss": 0.5827870509323406,
+      "val_acc": 0.825938566552901,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.6727043151855469,
+      "train_acc": 0.575,
+      "val_loss": 0.5834208582448471,
+      "val_acc": 0.8293515358361775,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.6494226574897766,
+      "train_acc": 0.675,
+      "val_loss": 0.5853595886892291,
+      "val_acc": 0.8316268486916951,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.6264274597167969,
+      "train_acc": 0.725,
+      "val_loss": 0.5887670894667286,
+      "val_acc": 0.8350398179749715,
+      "lr": 5e-05
+    }
+  ],
+  "best_val_loss": 0.5379845957029123,
+  "test_metrics": {
+    "accuracy": 0.7394766780432309,
+    "precision_weighted": 0.8080512076157598,
+    "recall_weighted": 0.7394766780432309,
+    "f1_weighted": 0.638449609768851,
+    "precision_macro": 0.8683908045977011,
+    "recall_macro": 0.5189075630252101,
+    "f1_macro": 0.46065961625542245,
+    "per_class": {
+      "precision": [
+        1.0,
+        0.7367816091954023
+      ],
+      "recall": [
+        0.037815126050420166,
+        1.0
+      ],
+      "f1_score": [
+        0.0728744939271255,
+        0.8484447385837194
+      ],
+      "support": [
+        238,
+        641
+      ]
+    },
+    "auc_roc": 0.8828707770159544,
+    "confusion_matrix": [
+      [
+        9,
+        229
+      ],
+      [
+        0,
+        641
+      ]
+    ],
+    "sensitivity": 1.0,
+    "specificity": 0.037815126050420166
+  },
+  "timestamp": "2026-02-06T06:59:13.864758"
+}

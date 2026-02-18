@@ -1,0 +1,169 @@
+{
+  "experiment_config": {
+    "dataset": "pneumonia",
+    "dataset_name": "Chest X-Ray Pneumonia",
+    "model_name": "vit_b_16",
+    "sample_size": 200,
+    "finetune_strategy": "layer_wise",
+    "augmentation": "standard",
+    "pretrained_source": "ImageNet",
+    "num_classes": 2,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs_trained": 13,
+    "training_time_seconds": 305.9829511642456,
+    "total_parameters": 85800194,
+    "trainable_parameters": 42681602,
+    "seed": 42,
+    "test_mode": false
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5215095627307892,
+      "train_acc": 0.7625,
+      "val_loss": 0.23808586421985267,
+      "val_acc": 0.9032992036405005,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.23071510314941407,
+      "train_acc": 0.9225,
+      "val_loss": 0.2719314746278952,
+      "val_acc": 0.8873720136518771,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1590406820178032,
+      "train_acc": 0.9475,
+      "val_loss": 0.14310016364401654,
+      "val_acc": 0.9419795221843004,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1277243708819151,
+      "train_acc": 0.955,
+      "val_loss": 0.6100991583250217,
+      "val_acc": 0.8236632536973834,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.13160572767257692,
+      "train_acc": 0.955,
+      "val_loss": 0.4912076090993328,
+      "val_acc": 0.856655290102389,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.12193747818470001,
+      "train_acc": 0.945,
+      "val_loss": 0.20625605788908313,
+      "val_acc": 0.9180887372013652,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.07697173818945885,
+      "train_acc": 0.9625,
+      "val_loss": 0.15784835479560227,
+      "val_acc": 0.944254835039818,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.1508328413963318,
+      "train_acc": 0.945,
+      "val_loss": 0.1676040209016092,
+      "val_acc": 0.9340159271899886,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.17486581325531006,
+      "train_acc": 0.9225,
+      "val_loss": 0.2593740774435124,
+      "val_acc": 0.8964732650739476,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.09055644445121289,
+      "train_acc": 0.97,
+      "val_loss": 0.1509278688422988,
+      "val_acc": 0.9453924914675768,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.0808431912958622,
+      "train_acc": 0.975,
+      "val_loss": 0.21105036839622415,
+      "val_acc": 0.9249146757679181,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0360392240434885,
+      "train_acc": 0.9875,
+      "val_loss": 0.1810967040431513,
+      "val_acc": 0.9351535836177475,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.028343109982088208,
+      "train_acc": 0.9875,
+      "val_loss": 0.2645712291760385,
+      "val_acc": 0.9112627986348123,
+      "lr": 5e-05
+    }
+  ],
+  "best_val_loss": 0.14310016364401654,
+  "test_metrics": {
+    "accuracy": 0.9465301478953356,
+    "precision_weighted": 0.9471565510604711,
+    "recall_weighted": 0.9465301478953356,
+    "f1_weighted": 0.9467708306055765,
+    "precision_macro": 0.9291250885212129,
+    "recall_macro": 0.9369223508436135,
+    "f1_macro": 0.9329143831445621,
+    "per_class": {
+      "precision": [
+        0.889795918367347,
+        0.9684542586750788
+      ],
+      "recall": [
+        0.9159663865546218,
+        0.9578783151326054
+      ],
+      "f1_score": [
+        0.9026915113871635,
+        0.9631372549019608
+      ],
+      "support": [
+        238,
+        641
+      ]
+    },
+    "auc_roc": 0.9854940416104039,
+    "confusion_matrix": [
+      [
+        218,
+        20
+      ],
+      [
+        27,
+        614
+      ]
+    ],
+    "sensitivity": 0.9578783151326054,
+    "specificity": 0.9159663865546218
+  },
+  "timestamp": "2026-02-06T13:17:04.732340"
+}

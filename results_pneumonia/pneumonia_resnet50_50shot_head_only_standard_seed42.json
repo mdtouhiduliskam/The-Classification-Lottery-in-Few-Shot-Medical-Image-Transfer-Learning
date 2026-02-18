@@ -1,0 +1,169 @@
+{
+  "experiment_config": {
+    "dataset": "pneumonia",
+    "dataset_name": "Chest X-Ray Pneumonia",
+    "model_name": "resnet50",
+    "sample_size": 50,
+    "finetune_strategy": "head_only",
+    "augmentation": "standard",
+    "pretrained_source": "ImageNet",
+    "num_classes": 2,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "num_epochs_trained": 13,
+    "training_time_seconds": 126.17585849761963,
+    "total_parameters": 23512130,
+    "trainable_parameters": 4098,
+    "seed": 42,
+    "test_mode": false
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6931089568138122,
+      "train_acc": 0.52,
+      "val_loss": 0.5828109980307613,
+      "val_acc": 0.7497155858930603,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6725568532943725,
+      "train_acc": 0.56,
+      "val_loss": 0.5518521523448523,
+      "val_acc": 0.7531285551763367,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6539796876907349,
+      "train_acc": 0.63,
+      "val_loss": 0.5351748589227089,
+      "val_acc": 0.7383390216154722,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6685354948043823,
+      "train_acc": 0.57,
+      "val_loss": 0.5488495553448475,
+      "val_acc": 0.7770193401592719,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.631235556602478,
+      "train_acc": 0.7,
+      "val_loss": 0.5573973855739025,
+      "val_acc": 0.8077360637087599,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6554384088516235,
+      "train_acc": 0.63,
+      "val_loss": 0.5860891107541845,
+      "val_acc": 0.8213879408418657,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.6436299705505371,
+      "train_acc": 0.7,
+      "val_loss": 0.5761787736103939,
+      "val_acc": 0.838452787258248,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.6356785917282104,
+      "train_acc": 0.74,
+      "val_loss": 0.5489615052090842,
+      "val_acc": 0.820250284414107,
+      "lr": 0.0001
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.6287045311927796,
+      "train_acc": 0.73,
+      "val_loss": 0.5475806960066838,
+      "val_acc": 0.8248009101251422,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.6243153238296508,
+      "train_acc": 0.7,
+      "val_loss": 0.5436045107038626,
+      "val_acc": 0.8293515358361775,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.6086028528213501,
+      "train_acc": 0.74,
+      "val_loss": 0.5390171757872737,
+      "val_acc": 0.8361774744027304,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.6348556470870972,
+      "train_acc": 0.66,
+      "val_loss": 0.5464014267216227,
+      "val_acc": 0.8475540386803185,
+      "lr": 5e-05
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.6256891489028931,
+      "train_acc": 0.72,
+      "val_loss": 0.5449777945994788,
+      "val_acc": 0.8498293515358362,
+      "lr": 5e-05
+    }
+  ],
+  "best_val_loss": 0.5351748589227089,
+  "test_metrics": {
+    "accuracy": 0.7383390216154722,
+    "precision_weighted": 0.7807540999488121,
+    "recall_weighted": 0.7383390216154722,
+    "f1_weighted": 0.6378139157667613,
+    "precision_macro": 0.8182393555811278,
+    "recall_macro": 0.5181275318239621,
+    "f1_macro": 0.4601313821832942,
+    "per_class": {
+      "precision": [
+        0.9,
+        0.7364787111622555
+      ],
+      "recall": [
+        0.037815126050420166,
+        0.9984399375975039
+      ],
+      "f1_score": [
+        0.07258064516129033,
+        0.847682119205298
+      ],
+      "support": [
+        238,
+        641
+      ]
+    },
+    "auc_roc": 0.885997456704991,
+    "confusion_matrix": [
+      [
+        9,
+        229
+      ],
+      [
+        1,
+        640
+      ]
+    ],
+    "sensitivity": 0.9984399375975039,
+    "specificity": 0.037815126050420166
+  },
+  "timestamp": "2026-02-06T07:09:30.458638"
+}
